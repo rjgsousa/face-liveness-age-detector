@@ -1,4 +1,4 @@
-# FLAD: Face Liveness and Age Detection
+# FLAD: Face Liveness and Age Detector
 
 ## Requirements
 
