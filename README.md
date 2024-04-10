@@ -1,5 +1,9 @@
 # FLAD: Face Liveness and Age Detector
 
+## Preview
+
+[![A preview](https://i9.ytimg.com/vi/MsdsNgzFpyY/mqdefault.jpg?sqp=CPjK2bAG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgTShIMA8=&rs=AOn4CLBfBurRU5_JOnn5hsFLKVNaRRjFRA)](https://youtu.be/MsdsNgzFpyY  "A preview")
+
 ## Requirements
 
 ### For insightface approach
@@ -18,7 +22,7 @@ conda activate FLAD
 ```
 2. Install project with `make run-experiment-standalone`
 
-3. Check results in ``
+3. Results will be displayed as it processes the video 
 
 ## Documentation
 

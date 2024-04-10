@@ -1,6 +1,5 @@
-import streamlit as st
-
 import cv2
+
 from flad.fdspoof.face_detection_spoofing import FaceDetectionSpoofing
 
 
@@ -24,7 +23,7 @@ class VideoProcessing(FaceDetectionSpoofing):
             ret, frame = self.cap.read()
 
             suc_state, res_frame = self.detect_face_and_spoof(frame, preview_it=self.do_preview)
-            if suc_state:
+            if suc_state and not self.do_preview:
                 self.video_writer.write(res_frame)
 
             if self.do_preview:
@@ -34,6 +33,7 @@ class VideoProcessing(FaceDetectionSpoofing):
         self.cap.release()
         if not self.do_preview:
             self.video_writer.release()
+
         cv2.destroyAllWindows()
 
     def _prep_save_to_disk(self):
