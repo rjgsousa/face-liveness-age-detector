@@ -1,12 +1,19 @@
 import argparse
+import logging
 
 from flad.fdvid.video_processing import VideoProcessing
 from flad.fdspoof.face_detection_spoofing import FaceDetectionSpoofing
+from flad.utils import save_img
 
 
-def exec_test(img_file_path):
+def exec_test(img_file_path, output_file_path):
     fd = FaceDetectionSpoofing()
-    fd.detect_face_and_spoof(img_file_path)
+    succ, img = fd.detect_face_and_spoof(img_file_path)
+
+    if succ:
+        save_img(img, output_file_path)
+    else:
+        logging.error(f"We were unable to process the image {img_file_path}")
 
 
 def main(arguments):
@@ -14,7 +21,7 @@ def main(arguments):
     output_file_path = arguments.output_file_path
 
     if arguments.img_file_path is not None:
-        exec_test(arguments.img_file_path)
+        exec_test(arguments.img_file_path, output_file_path)
     else:
         flad = VideoProcessing(video_file_path, output_file_path)
         flad.detect()
