@@ -4,6 +4,7 @@ from flad.fdspoof.face_detection_spoofing import FaceDetectionSpoofing
 
 
 class VideoProcessing(FaceDetectionSpoofing):
+    """Video Processing Layer. Processes frame by frame for face, liveness and age detection."""
 
     def __init__(self, video_file_path, output_file_path=None):
         super().__init__()

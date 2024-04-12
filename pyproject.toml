@@ -18,9 +18,7 @@ onnxruntime = "~1.17.1"
 onnxruntime-gpu = "~1.17.1"
 dvc = "~3.49.0"
 dvc-gdrive = "~3.0.1"
-streamlit = "~1.33.0"
-
 
 [tool.poetry.group.dev.dependencies]
 sphinx = "~7.2.6"
-
+sphinxcontrib-bibtex = "~2.6.2"

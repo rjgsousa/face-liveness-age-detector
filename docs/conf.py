@@ -16,12 +16,12 @@ import os
 os.environ['LOGS_PATH'] = '/tmp/'
 
 # -- Project information -----------------------------------------------------
-project = 'Video Shorts (& Blog) Generator - Overview'
+project = 'Face Liveness and Age Detector - Overview'
 copyright = '2024, RSOUSA.CO'
 author = 'Ricardo G. Sousa'
 
 # The full version, including alpha/beta/rc tags
-release = "0.1.0"
+release = "0.2.0"
 show_authors = True
 
 # -- General configuration ---------------------------------------------------
@@ -43,7 +43,9 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.autosummary',
     'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.bibtex'
 ]
+bibtex_bibfiles = ['refs.bib']
 
 # Include Python objects as they appear in source files
 # Default: alphabetically ('alphabetical')
@@ -145,8 +147,8 @@ html_sidebars = {
 }
 # -- Options for HTMLHelp output ---------------------------------------------
 html_last_updated_fmt = '%b, %d, %Y'
-html_logo = '_static/flad.png'
-html_favicon = '_static/flad.ico'
+html_logo = '_static/FLAD.png'
+html_favicon = '_static/FLAD.ico'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'fladDOC'
@@ -201,7 +203,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'flad.tex', 'Face Liveness and Age detector',
+    (master_doc, 'flad.tex', 'Face Liveness and Age Detector',
      author, 'manual'),
 ]
 
@@ -210,7 +212,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'FLAD', 'Face Liveness and Age detector Documentation',
+    (master_doc, 'FLAD', 'Face Liveness and Age Detector Documentation',
      [author], 1)
 ]
 
@@ -220,7 +222,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'FLAD', 'Face Liveness and Age detector Documentation',
+    (master_doc, 'FLAD', 'Face Liveness and Age Detector Documentation',
      author, 'FLAD', 'A quick overview of the FLAD project.', 'Documentation',
      1),
 ]

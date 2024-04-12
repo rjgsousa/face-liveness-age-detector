@@ -5,8 +5,7 @@
 Face Liveness and Age Detector
 ====================================================================
 
-This documentation provides an overview of the Face Liveness and Age Detector (FLAD) project, a powerful tool for
-creating engaging video content. It covers the project structure, key methods, and services implemented.
+This documentation provides an overview of the Face Liveness and Age Detector (FLAD) project. It covers the project structure, key methods, and services implemented.
 
 .. toctree::
    :caption: Table of Contents
@@ -19,3 +18,5 @@ creating engaging video content. It covers the project structure, key methods, a
 .. raw:: latex
 
    \listoffigures
+
+.. bibliography::

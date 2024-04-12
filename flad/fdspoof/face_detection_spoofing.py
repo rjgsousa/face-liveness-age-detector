@@ -8,6 +8,9 @@ from typing import Union
 
 
 class FaceDetectionSpoofing:
+    """Face Detection and Spoofing predictor
+
+    """
 
     def __init__(self):
         # buffalo_l fails with children
