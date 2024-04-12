@@ -2,11 +2,13 @@
 
 ## Preview
 
-[![A preview](https://i9.ytimg.com/vi/MsdsNgzFpyY/mqdefault.jpg?sqp=CPjK2bAG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgTShIMA8=&rs=AOn4CLBfBurRU5_JOnn5hsFLKVNaRRjFRA)](https://youtu.be/MsdsNgzFpyY  "A preview")
+<p align="center">
+
+[![A preview](http://img.youtube.com/vi/MsdsNgzFpyY/maxresdefault.jpg)](https://youtu.be/MsdsNgzFpyY "A preview")
+
+</p>
 
 ## Requirements
-
-### For insightface approach
 
 Install cuda requirements
 ```bash
@@ -15,14 +17,24 @@ sudo apt install nvidia-cudnn libcublas11 libcublaslt11
 
 ## Reproducibility
 
-1. Create a conda environment
+Before proceeding, first create a conda environment
+
 ```bash
 conda create -n FLAD python=3.10
 conda activate FLAD
 ```
-2. Install project with `make run-experiment-standalone`
 
-3. Results will be displayed as it processes the video 
+### Video
+
+1. Install project with `make run-experiment-standalone`
+
+2. Results will be displayed as it processes the video 
+
+### Images Liveness
+
+1. 
+
+
 
 ## Documentation
 
