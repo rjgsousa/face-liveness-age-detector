@@ -32,3 +32,8 @@ dvc-update:
 run-experiment-standalone: install dvc-update
 	@echo "######################### Processing video"
 	python flad/main.py --video-file-path data/external/Faces\ from\ around\ the\ world.mp4
+
+run-experiment-image-standalone: install dvc-update
+	@echo "######################### Processing Image"
+	python flad/main.py --img-file-path data/external/person_does_not_exist_0001.jpeg \
+		 --output-file-path data/processed/person_does_not_exist_0001_res.jpeg
