@@ -55,9 +55,8 @@ You must have the project installed. For that, it is suggested to have a conda e
 conda create -n FLAD python=3.10
 conda activate FLAD
 ```
-Then, install "poetry" (tested with 1.8.2) and "sphinx": 
+Then, install "poetry" (tested with 1.8.2): 
 ```bash
-pip install -U sphinx
 pip install poetry==1.8.2
 make install
 ```
