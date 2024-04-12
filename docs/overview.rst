@@ -14,7 +14,7 @@ Project Structure
 FLAD: Workflow
 ################################
 
-This figure illustrates the end-to-end workflow of the Face Liveness and Age Detector project. different technologies.
+This figure illustrates the end-to-end workflow of the Face Liveness and Age Detector project.
 
 .. figure:: images/FLAD-workflow.png
     :name: FLAD_workflow_fig
