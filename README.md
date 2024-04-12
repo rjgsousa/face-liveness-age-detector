@@ -26,15 +26,13 @@ conda activate FLAD
 
 ### Video
 
-1. Install project with `make run-experiment-standalone`
+1. Run `make run-experiment-standalone`
 
 2. Results will be displayed as it processes the video 
 
 ### Images Liveness
 
-1. 
-
-
+1. run `make run-experiment-image-standalone`
 
 ## Documentation
 
